@@ -1,0 +1,1242 @@
+<!-- Atelier — Premium Web Development & SEO Agency Landing Page -->
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Atelier — Premium Web Development &amp; High-Impact Digital Experiences</title>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#F8F8F5',
+            charcoal: '#171717',
+            surface: '#F0F1F3',
+            'surface-card': '#FFFFFF',
+            cobalt: '#455CFF',
+            'cobalt-dark': '#2E43E6',
+            'cobalt-light': '#EEF1FF',
+            lavender: '#EAEBFF',
+            subtle: '#6B7280',
+            borderline: 'rgba(23, 23, 23, 0.08)'
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            'subtle-elevated': '0 20px 40px -15px rgba(23, 23, 23, 0.07)',
+            'floating-nav': '0 12px 32px rgba(23, 23, 23, 0.06)',
+            'glass-card': '0 8px 30px rgba(0, 0, 0, 0.04)',
+            'glow-cobalt': '0 10px 30px -5px rgba(69, 92, 255, 0.35)',
+            'preview-laptop': '0 30px 70px -15px rgba(23, 23, 23, 0.18)',
+            'preview-phone': '0 25px 50px -12px rgba(23, 23, 23, 0.22)'
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 7s ease-in-out 1.5s infinite',
+            'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
+            'shimmer': 'shimmer 2.5s linear infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.02)' }
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      background-color: #F8F8F5;
+      color: #171717;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Editorial typography rhythm */
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Manrope', sans-serif;
+      letter-spacing: -0.03em;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8F8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D5D7DF;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #455CFF;
+    }
+    
+    /* Browser frame scroll simulation */
+    .mockup-scroll-container {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(23, 23, 23, 0.2) transparent;
+    }
+    .mockup-scroll-container::-webkit-scrollbar {
+      width: 5px;
+    }
+    .mockup-scroll-container::-webkit-scrollbar-thumb {
+      background: rgba(23, 23, 23, 0.2);
+      border-radius: 4px;
+    }
+
+    /* Modal Backdrop Blur */
+    .glass-modal {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+</head>
+<body class="selection:bg-cobalt selection:text-white">
+<!-- ============================================================ -->
+<!-- FLOATING NAVIGATION BAR                                     -->
+<!-- ============================================================ -->
+<header class="fixed top-5 inset-x-0 z-50 flex justify-center px-4 sm:px-6 pointer-events-none">
+<nav class="pointer-events-auto flex items-center justify-between w-full max-w-6xl px-4 sm:px-6 py-3 bg-white/80 backdrop-blur-xl border border-borderline rounded-full shadow-floating-nav transition-all duration-300 hover:shadow-subtle-elevated">
+<!-- Brand Logo / Wordmark -->
+<a aria-label="Webtron Solution Home" class="flex items-center gap-2 group" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvN7qTNBbwVUFArd_Z5oaKRNixZW2Q1u-ZDLZEXJ5630u6o9-nchE2S1paCvJXyRrBA00MiokhR8y0GqZ6TpokbSydLxPExG1LPsRtOL6ikTFgFuvM-dgPhjfj-8b_trwC8wM7zZBLZaB2NacLoPW3vCazCdKRbVDYwgQ07EVms9ul9o3_3Vr8-K6TfR24vWO1zddfTudrHltXfPHscurZ9ckE9gDXt9EahmJOqpnN3EYzLuNk_Sp8WQ" alt="Webtron Solution Logo" class="h-9 w-auto object-contain rounded-md transition-transform group-hover:scale-105 duration-200"><span class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-charcoal">WEBTRON <span class="text-cobalt">SOLUTION</span></span></a>
+<!-- Desktop Nav Links -->
+<div class="hidden md:flex items-center gap-8 font-medium text-sm text-subtle">
+<a class="hover:text-charcoal transition-colors" href="#services">Services</a>
+<a class="hover:text-charcoal transition-colors" href="#portfolio">Our Work</a>
+<a class="hover:text-charcoal transition-colors" href="#how-it-works">How It Works</a>
+</div>
+<!-- Right CTAs -->
+<div class="flex items-center gap-2 sm:gap-3">
+<!-- WhatsApp Icon Link -->
+<a aria-label="WhatsApp Contact" class="flex items-center justify-center w-10 h-10 rounded-full border border-borderline bg-white/70 hover:bg-[#25D366]/10 hover:border-[#25D366]/40 hover:text-[#25D366] text-charcoal transition-all duration-200 group" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank" title="Chat with us on WhatsApp (+91 8910964232)">
+<svg class="w-5 h-5 fill-current text-charcoal group-hover:text-[#25D366] transition-colors" viewBox="0 0 24 24">
+<path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path>
+</svg>
+</a>
+<!-- Primary CTA: Modal Trigger -->
+<button class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-medium text-xs sm:text-sm tracking-tight shadow-glow-cobalt transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" onclick="openModal()">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+</span>
+<span>Get Free Preview</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- ============================================================ -->
+<!-- HERO SECTION                                                 -->
+<!-- ============================================================ -->
+<section class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+<!-- Atmospheric background gradients -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-cobalt/10 via-lavender/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-24 right-10 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 left-12 w-80 h-80 bg-blue-100/40 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<!-- Top Badge USP -->
+<div class="flex justify-center mb-6">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white border border-cobalt/20 shadow-sm transition-all hover:border-cobalt/40">
+<span class="flex items-center justify-center w-2 h-2 rounded-full bg-cobalt animate-pulse"></span>
+<span class="font-heading text-xs font-bold uppercase tracking-wider text-cobalt">
+            FREE WORKING WEBSITE PREVIEW IN 15 MINUTES
+          </span>
+<span class="hidden sm:inline-block text-[11px] font-medium text-subtle border-l border-gray-200 pl-2">
+            USA &amp; UK Focused
+          </span>
+</div>
+</div>
+<!-- Main Headline & Supporting Paragraph -->
+<div class="text-center max-w-4xl mx-auto mb-10">
+<h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-charcoal leading-[1.08] tracking-tight mb-6">
+          Your Business Deserves a Website That <span class="relative inline-block text-cobalt underline decoration-cobalt/20 underline-offset-8">Actually Works.</span>
+</h1>
+<p class="text-base sm:text-lg md:text-xl text-subtle max-w-2xl mx-auto font-normal leading-relaxed">At <span class="font-semibold text-charcoal">Webtron Solution</span>, we engineer high-performing, bespoke websites that help US &amp; UK businesses stand out, build trust, and turn visitors into loyal customers.</p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-base shadow-glow-cobalt transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0" onclick="openModal()">
+<span>Get My Free Website Preview</span>
+<svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-white hover:bg-surface border border-borderline text-charcoal font-semibold text-base shadow-sm transition-all duration-200 hover:-translate-y-0.5" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path>
+</svg>
+<span>Talk to Us on WhatsApp</span>
+</a>
+</div>
+<!-- ============================================================ -->
+<!-- INTERACTIVE MOCKUP SHOWCASE (HERO VISUAL)                    -->
+<!-- ============================================================ -->
+<div class="relative max-w-5xl mx-auto pt-6">
+<!-- Ambient back glow -->
+<div class="absolute inset-0 bg-gradient-to-b from-cobalt/15 to-transparent rounded-3xl blur-2xl -z-10"></div>
+<!-- Floating UI Metric Badge (Linear/Stripe inspired) -->
+<div class="absolute -top-3 left-4 sm:-left-6 z-30 hidden sm:flex items-center gap-3 p-3.5 bg-white/95 backdrop-blur-md rounded-2xl border border-borderline shadow-floating-nav animate-float-slow">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm">
+            99%
+          </div>
+<div>
+<div class="text-xs font-semibold text-charcoal">Core Web Vitals</div>
+<div class="text-[11px] text-emerald-600 font-medium">Ultra-Fast 0.4s FCP</div>
+</div>
+</div>
+<!-- Floating Dev Status Badge -->
+<div class="absolute top-1/4 -right-2 sm:-right-8 z-30 hidden sm:flex items-center gap-3 p-3.5 bg-white/95 backdrop-blur-md rounded-2xl border border-borderline shadow-floating-nav animate-float-delayed">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-cobalt/10 text-cobalt">
+<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</div>
+<div>
+<div class="text-xs font-semibold text-charcoal">Live Prototype Mode</div>
+<div class="text-[11px] text-subtle">Ready in 15 mins</div>
+</div>
+</div>
+<!-- Main Desktop Browser Shell -->
+<div class="relative bg-white rounded-2xl md:rounded-3xl border border-borderline shadow-preview-laptop overflow-hidden transition-all duration-300">
+<!-- Browser Top Chrome Bar -->
+<div class="flex items-center justify-between px-4 sm:px-6 py-3.5 bg-surface border-b border-borderline">
+<!-- Window controls -->
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#FF5F56] border border-[#E0443E]"></span>
+<span class="w-3 h-3 rounded-full bg-[#FFBD2E] border border-[#DEA123]"></span>
+<span class="w-3 h-3 rounded-full bg-[#27C93F] border border-[#1AAB29]"></span>
+</div>
+<!-- Mock Address Bar -->
+<div class="flex items-center justify-center gap-2 px-4 py-1.5 bg-white rounded-full border border-borderline text-[11px] sm:text-xs text-subtle font-mono w-1/2 max-w-sm">
+<svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" fill-rule="evenodd"></path>
+</svg>
+<span class="truncate">webtron-preview.live/your-business</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-2 text-subtle text-xs">
+<span class="hidden sm:inline-block px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium text-[10px]">Staging Live</span>
+</div>
+</div>
+<!-- Desktop Website Preview Viewport -->
+<div class="relative w-full h-[340px] sm:h-[460px] md:h-[520px] bg-slate-100 overflow-hidden group">
+<img alt="Live Staging Preview - ZEDesign Luxury Interiors" class="w-full object-cover object-top transition-transform duration-1000 ease-out group-hover:-translate-y-16" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+<!-- Simulated Cursor Floating Over the Preview -->
+<div class="absolute bottom-20 right-28 hidden md:flex items-center gap-2 pointer-events-none animate-float-slow z-20">
+<svg class="w-7 h-7 text-charcoal filter drop-shadow-md" fill="currentColor" viewBox="0 0 24 24">
+<path d="M4 2l16 12-7 1.5 4 6.5-3 2-4-6.5-6 4.5z"></path>
+</svg>
+<span class="px-2.5 py-1 rounded-md bg-cobalt text-white font-mono text-[10px] tracking-wide shadow-md">
+                Audience Engagement +142%
+              </span>
+</div>
+</div>
+</div>
+<!-- Overlapping Mobile Phone Mockup -->
+<div class="absolute -bottom-8 -right-3 sm:-right-6 md:right-8 w-44 sm:w-56 md:w-64 rounded-3xl md:rounded-[36px] bg-charcoal p-2 sm:p-2.5 shadow-preview-phone border-4 border-charcoal/80 z-20 animate-float-slow">
+<!-- Phone Speaker Notch -->
+<div class="relative w-full bg-white rounded-2xl md:rounded-[28px] overflow-hidden border border-gray-100">
+<div class="h-4 sm:h-5 bg-charcoal flex justify-center items-center">
+<div class="w-12 sm:w-16 h-2 bg-charcoal/90 rounded-full"></div>
+</div>
+<!-- Mobile Preview Image -->
+<div class="h-56 sm:h-80 overflow-hidden">
+<img alt="Mobile Viewport Preview" class="w-full object-cover object-top" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- TRUST / VALUE STRIP                                          -->
+<!-- ============================================================ -->
+<section class="py-10 border-y border-borderline bg-white">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+<!-- Benefit 1 -->
+<div class="flex items-center gap-3.5 group">
+<div class="flex-shrink-0 w-11 h-11 rounded-2xl bg-surface border border-borderline flex items-center justify-center text-charcoal group-hover:border-cobalt/40 group-hover:text-cobalt transition-colors duration-200">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h2 class="font-heading font-bold text-sm sm:text-base text-charcoal leading-snug">Modern &amp; Responsive</h2>
+<p class="text-xs text-subtle">Pixel-perfect across all devices</p>
+</div>
+</div>
+<!-- Benefit 2 -->
+<div class="flex items-center gap-3.5 group">
+<div class="flex-shrink-0 w-11 h-11 rounded-2xl bg-surface border border-borderline flex items-center justify-center text-charcoal group-hover:border-cobalt/40 group-hover:text-cobalt transition-colors duration-200">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h2 class="font-heading font-bold text-sm sm:text-base text-charcoal leading-snug">Built for Performance</h2>
+<p class="text-xs text-subtle">Sub-second load times standard</p>
+</div>
+</div>
+<!-- Benefit 3 -->
+<div class="flex items-center gap-3.5 group">
+<div class="flex-shrink-0 w-11 h-11 rounded-2xl bg-surface border border-borderline flex items-center justify-center text-charcoal group-hover:border-cobalt/40 group-hover:text-cobalt transition-colors duration-200">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h2 class="font-heading font-bold text-sm sm:text-base text-charcoal leading-snug">SEO-Ready Structure</h2>
+<p class="text-xs text-subtle">Engineered for US &amp; UK search</p>
+</div>
+</div>
+<!-- Benefit 4 -->
+<div class="flex items-center gap-3.5 group">
+<div class="flex-shrink-0 w-11 h-11 rounded-2xl bg-surface border border-borderline flex items-center justify-center text-charcoal group-hover:border-cobalt/40 group-hover:text-cobalt transition-colors duration-200">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<h2 class="font-heading font-bold text-sm sm:text-base text-charcoal leading-snug">Designed to Convert</h2>
+<p class="text-xs text-subtle">Frictionless buyer journeys</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- SERVICES SECTION                                             -->
+<!-- ============================================================ -->
+<section class="py-24 sm:py-32 relative" id="services">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<!-- Section Header -->
+<div class="max-w-2xl mb-16">
+<div class="inline-flex items-center gap-2 text-xs font-bold font-heading uppercase tracking-widest text-cobalt mb-3">
+<span>Disciplines &amp; Capabilities</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-charcoal leading-tight">
+          Everything Your Business Needs to Grow Online.
+        </h2>
+</div>
+<!-- Services Grid: Website Development Highlighted with stronger visual weight -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6"><!-- CARD 1: Bespoke Web Engineering & Next.js (Core Flagship) -->
+<div class="md:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-borderline shadow-subtle-elevated relative overflow-hidden flex flex-col justify-between group hover:border-cobalt/40 transition-all duration-300">
+  <div class="absolute -top-20 -right-20 w-64 h-64 bg-cobalt/5 rounded-full blur-2xl group-hover:bg-cobalt/10 transition-colors pointer-events-none"></div>
+  <div>
+    <div class="flex items-center justify-between mb-8">
+      <div class="w-14 h-14 rounded-2xl bg-cobalt text-white flex items-center justify-center shadow-glow-cobalt">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </div>
+      <span class="px-3 py-1 rounded-full bg-cobalt-light text-cobalt font-semibold text-xs uppercase tracking-wider">
+        Core Specialty
+      </span>
+    </div>
+    <h3 class="text-2xl sm:text-3xl font-extrabold text-charcoal mb-4">
+      Bespoke Web Engineering &amp; Next.js
+    </h3>
+    <p class="text-subtle text-base sm:text-lg leading-relaxed mb-8">
+      Custom-coded, high-performance web applications built from scratch with Next.js, React, and clean semantics. Sub-second load speeds, zero bloat, and enterprise-grade code architecture.
+    </p>
+    <div class="flex flex-wrap gap-2.5 mb-8">
+      <span class="px-3 py-1.5 rounded-lg bg-surface text-charcoal text-xs font-medium">Next.js / React</span>
+      <span class="px-3 py-1.5 rounded-lg bg-surface text-charcoal text-xs font-medium">Sub-1s Load Time</span>
+      <span class="px-3 py-1.5 rounded-lg bg-surface text-charcoal text-xs font-medium">Enterprise Scalability</span>
+      <span class="px-3 py-1.5 rounded-lg bg-surface text-charcoal text-xs font-medium">Bespoke UI/UX</span>
+    </div>
+  </div>
+  <div class="pt-6 border-t border-borderline flex items-center justify-between">
+    <span class="text-xs font-semibold text-subtle uppercase tracking-wider">Live Prototype in 15m</span>
+    <button class="inline-flex items-center gap-2 text-cobalt font-semibold text-sm group-hover:translate-x-1 transition-transform" onclick="openModal()">
+      <span>Request Prototype</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- CARD 2: High-Conversion E-Commerce & Headless Shopify -->
+<div class="md:col-span-5 bg-white rounded-3xl p-8 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between group hover:border-cobalt/40 transition-all duration-300">
+  <div>
+    <div class="w-14 h-14 rounded-2xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-8 group-hover:border-cobalt/30 group-hover:text-cobalt transition-colors">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </div>
+    <h3 class="text-2xl font-extrabold text-charcoal mb-3">
+      High-Conversion E-Commerce &amp; Headless Shopify
+    </h3>
+    <p class="text-subtle text-sm sm:text-base leading-relaxed mb-6">
+      Tailored online storefronts engineered to maximize AOV and checkout conversions. Custom Shopify Liquid, Headless commerce, seamless Stripe/PayPal integration, and dynamic inventory synchronization.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Shopify &amp; Headless</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Frictionless Checkout</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">High AOV Architecture</span>
+    </div>
+  </div>
+  <div class="pt-6 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle">
+    <span>Shopify Plus, Headless, Stripe</span>
+    <span class="text-charcoal font-semibold">Conversion Focused</span>
+  </div>
+</div>
+
+<!-- CARD 3: Modern Website Redesign & Migration -->
+<div class="md:col-span-6 bg-white rounded-3xl p-8 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between group hover:border-cobalt/40 transition-all duration-300">
+  <div>
+    <div class="w-14 h-14 rounded-2xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-8 group-hover:border-cobalt/30 group-hover:text-cobalt transition-colors">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </div>
+    <h3 class="text-2xl font-extrabold text-charcoal mb-3">
+      Modern Website Redesign &amp; Migration
+    </h3>
+    <p class="text-subtle text-sm sm:text-base leading-relaxed mb-6">
+      Transform outdated legacy websites into modern, award-winning digital experiences. Seamless content and database migration with guaranteed zero SEO downtime and preserved domain equity.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Zero SEO Loss Migration</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Modern Brand Identity</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Legacy Stack Overhaul</span>
+    </div>
+  </div>
+  <div class="pt-6 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle">
+    <span>Brand Modernization</span>
+    <span class="text-charcoal font-semibold">Zero SEO Downtime</span>
+  </div>
+</div>
+
+<!-- CARD 4: Technical SEO & International Search Domination -->
+<div class="md:col-span-6 bg-white rounded-3xl p-8 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between group hover:border-cobalt/40 transition-all duration-300">
+  <div>
+    <div class="w-14 h-14 rounded-2xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-8 group-hover:border-cobalt/30 group-hover:text-cobalt transition-colors">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </div>
+    <h3 class="text-2xl font-extrabold text-charcoal mb-3">
+      Technical SEO &amp; International Search Domination
+    </h3>
+    <p class="text-subtle text-sm sm:text-base leading-relaxed mb-6">
+      Engineered specifically for US &amp; UK target markets. Comprehensive schema markup, Core Web Vitals optimization, programmatic SEO, and local authority ranking to drive high-intent commercial traffic.
+    </p>
+    <div class="flex flex-wrap gap-2 mb-6">
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">US &amp; UK Market Search</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Programmatic SEO</span>
+      <span class="px-2.5 py-1 rounded-lg bg-surface text-charcoal text-xs font-medium">Core Web Vitals 99+</span>
+    </div>
+  </div>
+  <div class="pt-6 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle">
+    <span>US &amp; UK Local Search</span>
+    <span class="text-charcoal font-semibold">Commercial Organic Traffic</span>
+  </div>
+</div></div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- PORTFOLIO SECTION                                            -->
+<!-- ============================================================ -->
+<section class="py-24 sm:py-32 bg-surface/60 border-t border-borderline" id="portfolio">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 text-xs font-bold font-heading uppercase tracking-widest text-cobalt mb-3">
+<span>Verified Deployments</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-charcoal leading-tight">
+            Good Work Speaks for Itself.
+          </h2>
+<p class="text-subtle text-base sm:text-lg mt-3">
+            Explore some of the websites we've designed and developed.
+          </p>
+</div>
+<!-- Live filters indicator -->
+<div class="flex items-center gap-2 text-xs font-mono text-subtle bg-white px-4 py-2 rounded-full border border-borderline shadow-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>4 Live Production Builds Featured</span>
+</div>
+</div>
+<!-- Portfolio Grid: 4 Browser Mockup Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- PROJECT 1: ZEDesign Interiors -->
+<article class="bg-white rounded-3xl border border-borderline overflow-hidden shadow-glass-card hover:shadow-subtle-elevated transition-all duration-300 group flex flex-col justify-between">
+<!-- Browser Header -->
+<div class="px-5 py-3.5 bg-surface border-b border-borderline flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+</div>
+<div class="text-[11px] font-mono text-subtle truncate max-w-[220px]">webtron-preview.live/your-business</div>
+<span class="text-[10px] uppercase font-bold text-cobalt bg-cobalt-light px-2 py-0.5 rounded">UK Studio</span>
+</div>
+<!-- Preview Frame with Scroll Interaction -->
+<div class="relative h-72 sm:h-80 overflow-y-auto mockup-scroll-container bg-slate-100 group">
+<img alt="ZEDesign Interiors Website Preview" class="w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<!-- Card Content Footer -->
+<div class="p-6 sm:p-8 bg-white border-t border-borderline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs font-semibold text-cobalt uppercase tracking-wider">Architecture &amp; Hospitality</span>
+<h3 class="text-xl font-extrabold text-charcoal mt-1">ZEDesign Interiors</h3>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors duration-200" href="https://zedesign.netlify.app" rel="noopener noreferrer" target="_blank">
+<span>View Live Website</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</article>
+<!-- PROJECT 2: Model Bridge USA -->
+<article class="bg-white rounded-3xl border border-borderline overflow-hidden shadow-glass-card hover:shadow-subtle-elevated transition-all duration-300 group flex flex-col justify-between">
+<!-- Browser Header -->
+<div class="px-5 py-3.5 bg-surface border-b border-borderline flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+</div>
+<div class="text-[11px] font-mono text-subtle truncate max-w-[220px]">webtron-preview.live/your-business</div>
+<span class="text-[10px] uppercase font-bold text-cobalt bg-cobalt-light px-2 py-0.5 rounded">US Academy</span>
+</div>
+<!-- Preview Frame with Scroll Interaction -->
+<div class="relative h-72 sm:h-80 overflow-y-auto mockup-scroll-container bg-slate-100 group">
+<img alt="Model Bridge USA Website Preview" class="w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<!-- Card Content Footer -->
+<div class="p-6 sm:p-8 bg-white border-t border-borderline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs font-semibold text-cobalt uppercase tracking-wider">Modeling Academy &amp; Editorial</span>
+<h3 class="text-xl font-extrabold text-charcoal mt-1">Model Bridge USA</h3>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors duration-200" href="https://modelbridgeusa.netlify.app" rel="noopener noreferrer" target="_blank">
+<span>View Live Website</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</article>
+<!-- PROJECT 3: Timy in Sicily -->
+<article class="bg-white rounded-3xl border border-borderline overflow-hidden shadow-glass-card hover:shadow-subtle-elevated transition-all duration-300 group flex flex-col justify-between">
+<!-- Browser Header -->
+<div class="px-5 py-3.5 bg-surface border-b border-borderline flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+</div>
+<div class="text-[11px] font-mono text-subtle truncate max-w-[220px]">webtron-preview.live/your-business</div>
+<span class="text-[10px] uppercase font-bold text-cobalt bg-cobalt-light px-2 py-0.5 rounded">Culinary Experience</span>
+</div>
+<!-- Preview Frame with Scroll Interaction -->
+<div class="relative h-72 sm:h-80 overflow-y-auto mockup-scroll-container bg-slate-100 group">
+<img alt="Timy in Sicily Culinary Experience Preview" class="w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<!-- Card Content Footer -->
+<div class="p-6 sm:p-8 bg-white border-t border-borderline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs font-semibold text-cobalt uppercase tracking-wider">Luxury Travel &amp; Hospitality</span>
+<h3 class="text-xl font-extrabold text-charcoal mt-1">Timy in Sicily</h3>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors duration-200" href="https://timyinsicily.netlify.app" rel="noopener noreferrer" target="_blank">
+<span>View Live Website</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</article>
+<!-- PROJECT 4: On-Site Electronics -->
+<article class="bg-white rounded-3xl border border-borderline overflow-hidden shadow-glass-card hover:shadow-subtle-elevated transition-all duration-300 group flex flex-col justify-between">
+<!-- Browser Header -->
+<div class="px-5 py-3.5 bg-surface border-b border-borderline flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+</div>
+<div class="text-[11px] font-mono text-subtle truncate max-w-[220px]">webtron-preview.live/your-business</div>
+<span class="text-[10px] uppercase font-bold text-cobalt bg-cobalt-light px-2 py-0.5 rounded">US Commercial IT</span>
+</div>
+<!-- Preview Frame with Scroll Interaction -->
+<div class="relative h-72 sm:h-80 overflow-y-auto mockup-scroll-container bg-slate-100 group">
+<img alt="On-Site Electronics IT Support Preview" class="w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg">
+</div>
+<!-- Card Content Footer -->
+<div class="p-6 sm:p-8 bg-white border-t border-borderline flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs font-semibold text-cobalt uppercase tracking-wider">Enterprise Tech &amp; Systems</span>
+<h3 class="text-xl font-extrabold text-charcoal mt-1">On-Site Electronics</h3>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors duration-200" href="https://onsite-electronics.netlify.app" rel="noopener noreferrer" target="_blank">
+<span>View Live Website</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- HOW IT WORKS TIMELINE                                        -->
+<!-- ============================================================ -->
+<section class="py-24 sm:py-32 relative overflow-hidden" id="how-it-works">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-20">
+<div class="inline-flex items-center gap-2 text-xs font-bold font-heading uppercase tracking-widest text-cobalt mb-3">
+<span>Seamless Zero-Risk Process</span>
+</div>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-charcoal leading-tight mb-4">
+          From an Idea to a Working Website. In Minutes.
+        </h2>
+<div class="inline-block px-4 py-2 rounded-full bg-cobalt-light text-cobalt font-medium text-sm sm:text-base mt-2">
+          "Experience our work before committing to a project."
+        </div>
+</div>
+<!-- Horizontal 3-Step Timeline with Connected Progress Line -->
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Connecting Line for Desktop -->
+<div class="hidden md:block absolute top-1/4 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-cobalt via-cobalt/40 to-cobalt -z-0"></div>
+<!-- STEP 01 -->
+<div class="relative z-10 bg-white rounded-3xl p-8 border border-borderline shadow-glass-card hover:shadow-subtle-elevated transition-all flex flex-col group">
+<div class="w-14 h-14 rounded-2xl bg-charcoal text-white font-mono font-bold text-lg flex items-center justify-center mb-6 shadow-md group-hover:bg-cobalt transition-colors duration-200">
+            01
+          </div>
+<span class="text-xs font-mono uppercase tracking-wider text-cobalt font-semibold mb-2">Step 01</span>
+<h3 class="text-xl font-extrabold text-charcoal mb-3">
+            Tell Us About Your Business
+          </h3>
+<p class="text-subtle text-sm leading-relaxed mb-6">
+            Share your company name, industry, goals, and any preferences. Takes less than 2 minutes to complete our interactive intake.
+          </p>
+<div class="mt-auto pt-4 border-t border-borderline/60 flex items-center gap-2 text-xs text-charcoal font-medium">
+<svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+<span>No upfront payment required</span>
+</div>
+</div>
+<!-- STEP 02 -->
+<div class="relative z-10 bg-white rounded-3xl p-8 border-2 border-cobalt shadow-glow-cobalt transition-all flex flex-col group">
+<div class="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-cobalt text-white font-mono text-[10px] font-bold uppercase tracking-wider">
+            Fast Turnaround
+          </div>
+<div class="w-14 h-14 rounded-2xl bg-cobalt text-white font-mono font-bold text-lg flex items-center justify-center mb-6 shadow-glow-cobalt">
+            02
+          </div>
+<span class="text-xs font-mono uppercase tracking-wider text-cobalt font-semibold mb-2">Step 02</span>
+<h3 class="text-xl font-extrabold text-charcoal mb-3">
+            Receive Your Working Website Preview Within 15 Minutes
+          </h3>
+<p class="text-subtle text-sm leading-relaxed mb-6">
+            Our creative directors spin up a custom, interactive staging URL featuring real responsive code, hero concept, and design direction.
+          </p>
+<div class="mt-auto pt-4 border-t border-borderline/60 flex items-center gap-2 text-xs text-charcoal font-medium">
+<svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+<span>Interactive staging link sent via WhatsApp/Email</span>
+</div>
+</div>
+<!-- STEP 03 -->
+<div class="relative z-10 bg-white rounded-3xl p-8 border border-borderline shadow-glass-card hover:shadow-subtle-elevated transition-all flex flex-col group">
+<div class="w-14 h-14 rounded-2xl bg-charcoal text-white font-mono font-bold text-lg flex items-center justify-center mb-6 shadow-md group-hover:bg-cobalt transition-colors duration-200">
+            03
+          </div>
+<span class="text-xs font-mono uppercase tracking-wider text-cobalt font-semibold mb-2">Step 03</span>
+<h3 class="text-xl font-extrabold text-charcoal mb-3">
+            Approve the Design. We Build Your Actual Website.
+          </h3>
+<p class="text-subtle text-sm leading-relaxed mb-6">
+            Once you love what you see, we finalize copywriting, implement high-speed technical SEO, connect CMS/APIs, and deploy to your custom domain.
+          </p>
+<div class="mt-auto pt-4 border-t border-borderline/60 flex items-center gap-2 text-xs text-charcoal font-medium">
+<svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+<span>Guaranteed launch timeline &amp; SLA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- FINAL CTA SECTION                                            -->
+<!-- ============================================================ -->
+<section class="py-20 sm:py-28 relative">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="relative rounded-3xl md:rounded-[40px] bg-charcoal text-white p-10 sm:p-16 md:p-20 overflow-hidden shadow-2xl">
+<!-- Abstract Interactive Aura Background with Subtle Gradients -->
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-cobalt/40 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-500/30 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-lavender text-xs font-mono mb-6 backdrop-blur-md">
+<span>Ready in 15 Minutes</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+</div>
+<h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Your Next Website Starts Here.
+          </h2>
+<p class="text-base sm:text-xl text-gray-300 leading-relaxed mb-10 max-w-xl mx-auto">
+            Tell us about your business. Let's create something exceptional together.
+          </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-base shadow-glow-cobalt transition-all duration-200 hover:scale-105 active:scale-95" onclick="openModal()">
+<span>Get My Free Website Preview</span>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-base backdrop-blur-md transition-all duration-200 hover:scale-105" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path>
+</svg>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Contact line -->
+<div class="mt-8 text-xs text-gray-400 font-mono">
+            Direct Line / WhatsApp: +91 8910964232 • Available for US &amp; UK Timezones
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- FOOTER                                                       -->
+<!-- ============================================================ -->
+<footer class="py-16 border-t border-borderline bg-white">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+<!-- Col 1: Logo & Agency Summary -->
+<div class="md:col-span-5">
+<a aria-label="Webtron Solution Home" class="flex items-center gap-2 mb-4 group" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvN7qTNBbwVUFArd_Z5oaKRNixZW2Q1u-ZDLZEXJ5630u6o9-nchE2S1paCvJXyRrBA00MiokhR8y0GqZ6TpokbSydLxPExG1LPsRtOL6ikTFgFuvM-dgPhjfj-8b_trwC8wM7zZBLZaB2NacLoPW3vCazCdKRbVDYwgQ07EVms9ul9o3_3Vr8-K6TfR24vWO1zddfTudrHltXfPHscurZ9ckE9gDXt9EahmJOqpnN3EYzLuNk_Sp8WQ" alt="Webtron Solution Logo" class="h-10 w-auto object-contain rounded-md"><span class="font-heading font-extrabold text-xl tracking-tight text-charcoal">WEBTRON <span class="text-cobalt">SOLUTION</span></span></a>
+<p class="text-subtle text-sm leading-relaxed max-w-sm">
+            High-end digital agency designing and engineering world-class web experiences, bespoke e-commerce platforms, and conversion architecture for fast-growing US and UK brands.
+          </p>
+</div>
+<!-- Col 2: Services -->
+<div class="md:col-span-3">
+<h4 class="font-heading font-bold text-sm text-charcoal uppercase tracking-wider mb-4">Services</h4>
+<ul class="space-y-2.5 text-sm text-subtle">
+<li><a class="hover:text-cobalt transition-colors" href="#services">Custom Website Development</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="#services">E-commerce Stores</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="#services">Website Redesign</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="#services">Technical SEO &amp; Growth</a></li>
+</ul>
+</div>
+<!-- Col 3: Portfolio & Live Links -->
+<div class="md:col-span-2">
+<h4 class="font-heading font-bold text-sm text-charcoal uppercase tracking-wider mb-4">Portfolio</h4>
+<ul class="space-y-2.5 text-sm text-subtle">
+<li><a class="hover:text-cobalt transition-colors" href="https://zedesign.netlify.app" target="_blank">ZEDesign</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="https://modelbridgeusa.netlify.app" target="_blank">Model Bridge USA</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="https://timyinsicily.netlify.app" target="_blank">Timy in Sicily</a></li>
+<li><a class="hover:text-cobalt transition-colors" href="https://onsite-electronics.netlify.app" target="_blank">On-Site Electronics</a></li>
+</ul>
+</div>
+<!-- Col 4: Direct WhatsApp Contact -->
+<div class="md:col-span-2">
+<h4 class="font-heading font-bold text-sm text-charcoal uppercase tracking-wider mb-4">Connect</h4>
+<div class="space-y-3">
+<a class="inline-flex items-center gap-2 text-sm font-medium text-charcoal hover:text-[#25D366] transition-colors" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank">
+<span class="w-2 h-2 rounded-full bg-[#25D366]"></span>
+<span>+91 8910964232</span>
+</a>
+<p class="text-xs text-subtle">WhatsApp Direct Support (US &amp; UK Hours)</p>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright & Details -->
+<div class="pt-8 border-t border-borderline flex flex-col sm:flex-row items-center justify-between text-xs text-subtle gap-4">
+<div>© <span id="currentYear">2026</span> Webtron Solution Ltd. All rights reserved.</div>
+<div class="flex items-center gap-6">
+<button class="hover:text-charcoal transition-colors" onclick="openModal()">Free Preview Intake</button>
+<a class="hover:text-charcoal transition-colors" href="https://wa.me/918910964232">WhatsApp Concierge</a>
+<span>Serving USA &amp; United Kingdom</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- ============================================================ -->
+<!-- MODAL: FREE WEBSITE PREVIEW INTAKE FORM                       -->
+<!-- ============================================================ -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-charcoal/60 glass-modal opacity-0 pointer-events-none transition-opacity duration-300" id="previewModal">
+<div class="relative w-full max-w-2xl bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-borderline max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="modalCard">
+<!-- Close button -->
+<button aria-label="Close modal" class="absolute top-6 right-6 p-2 rounded-full hover:bg-surface text-subtle hover:text-charcoal transition-colors" onclick="closeModal()">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Modal Header -->
+<div class="mb-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cobalt-light text-cobalt text-xs font-mono font-semibold uppercase tracking-wider mb-2">
+          15-Minute Turnaround Guarantee
+        </div>
+<h3 class="text-2xl sm:text-3xl font-extrabold text-charcoal">
+          Get Your Free Working Website Preview
+        </h3>
+<p class="text-sm text-subtle mt-1.5">
+          Tell us about your business. We will engineer a custom, interactive preview and send your private staging link directly via WhatsApp or email.
+        </p>
+</div>
+<!-- Form Content -->
+<form class="space-y-4" id="previewForm" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Full Name -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="fullName">
+              Full Name <span class="text-cobalt">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="fullName" placeholder="Alex Turner" required="" type="text">
+</div>
+<!-- Business Name -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="businessName">
+              Business Name <span class="text-cobalt">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="businessName" placeholder="Apex Global Advisory" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Business Email -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="businessEmail">
+              Business Email <span class="text-cobalt">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="businessEmail" placeholder="alex@apexadvisory.com" required="" type="email">
+</div>
+<!-- WhatsApp Number -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="whatsappNumber">
+              WhatsApp Number <span class="text-cobalt">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="whatsappNumber" placeholder="+1 555 019 2834 or +44 ..." required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Country Select -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="countrySelect">
+              Country <span class="text-cobalt">*</span>
+</label>
+<select class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="countrySelect" required="">
+<option value="United States">United States</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Other">Other International</option>
+</select>
+</div>
+<!-- Type of Website -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="websiteType">
+              Type of Website <span class="text-cobalt">*</span>
+</label>
+<select class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="websiteType" required="">
+<option value="Bespoke Company Website">Custom Website Development</option>
+<option value="E-commerce Store">E-commerce Online Store</option>
+<option value="Website Redesign">Complete Website Redesign</option>
+<option value="High-Impact Landing Page">High-Impact Landing Page</option>
+<option value="SEO Architecture">SEO Architecture &amp; Overhaul</option>
+</select>
+</div>
+</div>
+<!-- Existing Website (Optional) -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="existingWebsite">
+            Existing Website (Optional)
+          </label>
+<input class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="existingWebsite" placeholder="https://example.com" type="url">
+</div>
+<!-- Brief Business Description -->
+<div>
+<label class="block text-xs font-semibold text-charcoal uppercase tracking-wider mb-1.5" for="businessDesc">
+            Brief Business Description <span class="text-cobalt">*</span>
+</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-borderline bg-surface/50 text-charcoal text-sm focus:outline-none focus:border-cobalt focus:bg-white transition-colors resize-none" id="businessDesc" placeholder="What does your company do, who are your primary clients, and what is your main goal for this website?" required="" rows="3"></textarea>
+</div>
+<!-- Form Submission Notice -->
+<div class="flex items-center gap-2 text-xs text-subtle pt-1">
+<svg class="w-4 h-4 text-cobalt flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>100% Free • Staging preview delivered with zero commitment</span>
+</div>
+<!-- Submit CTA -->
+<div class="pt-3">
+<button class="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-base shadow-glow-cobalt transition-all duration-200 hover:-translate-y-0.5" type="submit">
+<span>Generate My 15-Minute Preview</span>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</form>
+<!-- Success Feedback State (hidden by default) -->
+<div class="hidden text-center py-8" id="formSuccessState">
+<div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h4 class="text-2xl font-extrabold text-charcoal mb-2">Request Received!</h4>
+<p class="text-sm text-subtle max-w-md mx-auto mb-6">
+          Our engineering team is setting up your live staging preview. You will receive your private interactive link on WhatsApp within 15 minutes.
+        </p>
+<button class="px-6 py-2.5 rounded-full bg-charcoal text-white text-sm font-medium hover:bg-black transition-colors" onclick="closeModal()">Return to Webtron Solution</button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript logic for Modal & Micro-Interactions -->
+<script>
+    // Modal Open / Close Logic
+    const modal = document.getElementById('previewModal');
+    const modalCard = document.getElementById('modalCard');
+    const form = document.getElementById('previewForm');
+    const successState = document.getElementById('formSuccessState');
+
+    function openModal() {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+      document.body.style.overflow = '';
+      
+      // Reset form after close animation
+      setTimeout(() => {
+        form.classList.remove('hidden');
+        successState.classList.add('hidden');
+      }, 300);
+    }
+
+    // Close on backdrop click
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) {
+        closeModal();
+      }
+    });
+
+    // Handle Form Submission experience
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      // Simulate quick transmission
+      form.classList.add('hidden');
+      successState.classList.remove('hidden');
+    }
+
+    // Set dynamic current year in footer
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+
+
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span>
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span>
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span></body></html>
+
+<!-- Atelier — Mobile Landing Page -->
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Webtron Solution — Premium Web Development &amp; High-Impact Digital Experiences</title>
+<!-- Google Fonts: Manrope & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#F8F8F5',
+            charcoal: '#171717',
+            surface: '#F0F1F3',
+            'surface-card': '#FFFFFF',
+            cobalt: '#455CFF',
+            'cobalt-dark': '#2E43E6',
+            'cobalt-light': '#EEF1FF',
+            lavender: '#EAEBFF',
+            subtle: '#6B7280',
+            borderline: 'rgba(23, 23, 23, 0.08)'
+          },
+          fontFamily: {
+            heading: ['Manrope', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            'subtle-elevated': '0 20px 40px -15px rgba(23, 23, 23, 0.07)',
+            'floating-nav': '0 12px 32px rgba(23, 23, 23, 0.06)',
+            'glass-card': '0 8px 30px rgba(0, 0, 0, 0.04)',
+            'glow-cobalt': '0 10px 30px -5px rgba(69, 92, 255, 0.35)',
+            'preview-laptop': '0 30px 70px -15px rgba(23, 23, 23, 0.18)',
+            'preview-phone': '0 25px 50px -12px rgba(23, 23, 23, 0.22)'
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 7s ease-in-out 1.5s infinite',
+            'pulse-subtle': 'pulseSubtle 3s ease-in-out infinite',
+            'shimmer': 'shimmer 2.5s linear infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.02)' }
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      background-color: #F8F8F5;
+      color: #171717;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Editorial typography rhythm */
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Manrope', sans-serif;
+      letter-spacing: -0.03em;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8F8F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D5D7DF;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #455CFF;
+    }
+    
+    /* Browser frame scroll simulation */
+    .mockup-scroll-container {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(23, 23, 23, 0.2) transparent;
+    }
+    .mockup-scroll-container::-webkit-scrollbar {
+      width: 5px;
+    }
+    .mockup-scroll-container::-webkit-scrollbar-thumb {
+      background: rgba(23, 23, 23, 0.2);
+      border-radius: 4px;
+    }
+
+    /* Modal Backdrop Blur */
+    .glass-modal {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+</head>
+<body class="selection:bg-cobalt selection:text-white">
+<!-- ============================================================ -->
+<!-- FLOATING NAVIGATION BAR                                     -->
+<!-- ============================================================ -->
+<header class="fixed top-3 inset-x-0 z-50 flex justify-center px-3 sm:px-6 pointer-events-none"><nav class="pointer-events-auto flex items-center justify-between w-full max-w-6xl px-3.5 py-2.5 bg-white/90 backdrop-blur-xl border border-borderline rounded-full shadow-floating-nav transition-all duration-300"><a aria-label="Webtron Solution Home" class="flex items-center gap-2.5" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv6zmMUhqO_sgLiYTAV0T-52AGyrwD_0FRvZaq7V-IC_ufx0KNi2SuHQiKijHe4G6WG-YKzC5cx9e-vIBpLYnLwL5Wu9ElXUIpkAyuFj4gdTvZlvD2taNJ0B_MONAiDDoH9a0Rd_U9WPx3sm1_HPAJChSZWZwCaldqlkTCWlJyn0CAA5y7MQmVt4JMlXo8Iyp5cvu_51V0K3nmty0eB2tm6UZvW8MObKaTQOym1RLKdsHVa8cTFz8GBw" alt="Webtron Solution Logo" class="w-8 h-8 rounded-lg object-contain bg-white"><span class="font-heading font-extrabold text-base tracking-tight text-charcoal">Webtron <span class="text-cobalt">Solution</span></span></a><div class="hidden md:flex items-center gap-8 font-medium text-sm text-subtle"><a class="hover:text-charcoal transition-colors" href="#services">Services</a><a class="hover:text-charcoal transition-colors" href="#portfolio">Our Work</a><a class="hover:text-charcoal transition-colors" href="#how-it-works">How It Works</a></div><div class="flex items-center gap-1.5 sm:gap-3"><a aria-label="WhatsApp Contact" class="flex items-center justify-center w-8 h-8 rounded-full border border-borderline bg-white/70 hover:bg-[#25D366]/10 text-charcoal" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path></svg></a><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-medium text-xs tracking-tight shadow-glow-cobalt active:scale-95 transition-all" onclick="openModal()"><span class="relative flex h-1.5 w-1.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span><span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span></span><span>Preview</span></button></div></nav></header>
+<!-- ============================================================ -->
+<!-- HERO SECTION                                                 -->
+<!-- ============================================================ -->
+<section class="relative pt-24 pb-16 md:pt-44 md:pb-28 overflow-hidden"><div class="absolute top-10 left-1/2 -translate-x-1/2 w-80 h-80 bg-gradient-to-tr from-cobalt/10 via-lavender/30 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="flex justify-center mb-5"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-cobalt/20 shadow-sm"><span class="flex items-center justify-center w-2 h-2 rounded-full bg-cobalt animate-pulse"></span><span class="font-heading text-[11px] font-bold uppercase tracking-wider text-cobalt">FREE WORKING WEBSITE PREVIEW IN 15 MINUTES</span></div></div><div class="text-center max-w-4xl mx-auto mb-6"><h1 class="text-3xl sm:text-6xl font-extrabold text-charcoal leading-[1.12] tracking-tight mb-4">Your Business Deserves a Website That <span class="relative inline-block text-cobalt underline decoration-cobalt/20 underline-offset-4">Actually Works.</span></h1><p class="text-sm sm:text-lg text-subtle max-w-2xl mx-auto font-normal leading-relaxed">At Webtron Solution, we design and develop high-performing websites that help businesses stand out, build trust, and turn visitors into customers.</p></div><div class="flex flex-col gap-3 mb-10 w-full"><button class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-sm shadow-glow-cobalt active:scale-[0.98] transition-all" onclick="openModal()"><span>Get My Free Website Preview</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><a class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-white hover:bg-surface border border-borderline text-charcoal font-semibold text-sm shadow-sm active:scale-[0.98] transition-all" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path></svg><span>Talk to Us on WhatsApp</span></a></div><div class="relative max-w-5xl mx-auto"><div class="flex items-center justify-between gap-2 p-2.5 mb-3 bg-white/95 backdrop-blur-md rounded-xl border border-borderline shadow-sm"><div class="flex items-center gap-2"><div class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-xs">99%</div><div><div class="text-[11px] font-semibold text-charcoal">Core Web Vitals</div><div class="text-[10px] text-emerald-600 font-medium">Ultra-Fast 0.4s FCP</div></div></div><div class="flex items-center gap-1.5 px-2 py-1 rounded-md bg-cobalt/10 text-cobalt text-[10px] font-medium"><span class="w-1.5 h-1.5 rounded-full bg-cobalt animate-ping"></span><span>Live 15m Prototype</span></div></div><div class="relative bg-white rounded-2xl border border-borderline shadow-preview-laptop overflow-hidden"><div class="flex items-center justify-between px-3 py-2.5 bg-surface border-b border-borderline"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></span></div><div class="flex items-center justify-center gap-1.5 px-3 py-1 bg-white rounded-full border border-borderline text-[10px] text-subtle font-mono truncate max-w-[200px]"><svg class="w-3 h-3 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" fill-rule="evenodd"></path></svg><span class="truncate">webtron-preview.live/your-business</span></div><span class="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium text-[9px]">Live</span></div><div class="relative w-full h-56 sm:h-80 bg-slate-100 overflow-hidden"><img alt="Live Staging Preview" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuns5GWMMRSc2PVh_S-zVQjm2ky3u68Z04L2NGXzSmrGAh-HLWFnNrp_2vq7Oi6P20gNZCSAmZI9pV4LT8eH0zxv0EMgEgmNxkYksGA7wwkSeSNcqYRQLKwWfA22iZ4EARVextN3OxxCjNX98TVCmHkNxJ1fsq50oKFMGRBMQXPu8H2Ae27lppFnbfFG7_l3sbgMUdIKEpZPNVNnp3wJ1ZvI15NKb54bk35AoTm3dt"></div></div></div></div></section>
+<!-- ============================================================ -->
+<!-- TRUST / VALUE STRIP                                          -->
+<!-- ============================================================ -->
+<section class="py-8 border-y border-borderline bg-white"><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="grid grid-cols-2 gap-4"><div class="flex items-start gap-2.5"><div class="flex-shrink-0 w-9 h-9 rounded-xl bg-surface border border-borderline flex items-center justify-center text-charcoal mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><div><h2 class="font-heading font-bold text-xs text-charcoal leading-snug">Modern &amp; Responsive</h2><p class="text-[11px] text-subtle leading-tight mt-0.5">Pixel-perfect on all devices</p></div></div><div class="flex items-start gap-2.5"><div class="flex-shrink-0 w-9 h-9 rounded-xl bg-surface border border-borderline flex items-center justify-center text-charcoal mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><div><h2 class="font-heading font-bold text-xs text-charcoal leading-snug">Built for Performance</h2><p class="text-[11px] text-subtle leading-tight mt-0.5">Sub-second load times</p></div></div><div class="flex items-start gap-2.5"><div class="flex-shrink-0 w-9 h-9 rounded-xl bg-surface border border-borderline flex items-center justify-center text-charcoal mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><div><h2 class="font-heading font-bold text-xs text-charcoal leading-snug">SEO-Ready Structure</h2><p class="text-[11px] text-subtle leading-tight mt-0.5">Engineered for US &amp; UK</p></div></div><div class="flex items-start gap-2.5"><div class="flex-shrink-0 w-9 h-9 rounded-xl bg-surface border border-borderline flex items-center justify-center text-charcoal mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><div><h2 class="font-heading font-bold text-xs text-charcoal leading-snug">Designed to Convert</h2><p class="text-[11px] text-subtle leading-tight mt-0.5">Frictionless journeys</p></div></div></div></div></section>
+<!-- ============================================================ -->
+<!-- SERVICES SECTION                                             -->
+<!-- ============================================================ -->
+<section class="py-16 sm:py-32 relative" id="services"><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="max-w-2xl mb-10"><div class="inline-flex items-center gap-2 text-xs font-bold font-heading uppercase tracking-widest text-cobalt mb-2"><span>Disciplines &amp; Capabilities</span></div><h2 class="text-2xl sm:text-5xl font-extrabold text-charcoal leading-tight">Everything Your Business Needs to Grow Online.</h2></div><div class="grid grid-cols-1 md:grid-cols-12 gap-5"><div class="md:col-span-7 bg-white rounded-2xl p-6 sm:p-10 border border-borderline shadow-subtle-elevated relative overflow-hidden flex flex-col justify-between"><div class="flex items-center justify-between mb-5"><div class="w-11 h-11 rounded-xl bg-cobalt text-white flex items-center justify-center shadow-glow-cobalt"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><span class="px-2.5 py-0.5 rounded-full bg-cobalt-light text-cobalt font-semibold text-[11px] uppercase tracking-wider">Core Specialty</span></div><h3 class="text-xl font-extrabold text-charcoal mb-2">Bespoke Web Engineering &amp; Next.js</h3><p class="text-subtle text-sm leading-relaxed mb-5">Custom-coded, high-performance web applications engineered from scratch with Next.js, React, and clean semantics. Sub-second load speeds and enterprise-grade architecture.</p><div class="flex flex-wrap gap-2 mb-6"><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Next.js &amp; React</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Tailwind &amp; Next-Gen</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Enterprise Speed</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Full Mobile Fidelity</span></div><div class="pt-4 border-t border-borderline flex items-center justify-between"><span class="text-[11px] font-semibold text-subtle uppercase tracking-wider">Live sample in 15m</span><button class="inline-flex items-center gap-1.5 text-cobalt font-semibold text-xs active:translate-x-0.5" onclick="openModal()"><span>Request Prototype</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button></div></div><div class="md:col-span-5 bg-white rounded-2xl p-6 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between"><div class="w-11 h-11 rounded-xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-5"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><h3 class="text-lg font-extrabold text-charcoal mb-2">High-Conversion E-Commerce &amp; Headless Shopify</h3><p class="text-subtle text-sm leading-relaxed mb-5">Tailored online storefronts engineered to maximize AOV and checkout conversions with custom Shopify Liquid, Headless architectures, and frictionless checkout flows.</p><div class="flex flex-wrap gap-2 mb-5"><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Shopify &amp; Headless</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Stripe &amp; Global Gateways</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">High Conversion</span></div><div class="pt-4 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle"><span>Modern Storefront Architecture</span><span class="text-charcoal font-semibold">Max AOV Flow</span></div></div><div class="md:col-span-6 bg-white rounded-2xl p-6 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between"><div class="w-11 h-11 rounded-xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-5"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><h3 class="text-lg font-extrabold text-charcoal mb-2">Modern Website Redesign &amp; Migration</h3><p class="text-subtle text-sm leading-relaxed mb-5">Transform outdated legacy websites into modern, responsive digital experiences with guaranteed zero SEO downtime and preserved domain equity.</p><div class="flex flex-wrap gap-2 mb-5"><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Zero SEO Loss Migration</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Brand Modernization</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Full Content Transfer</span></div><div class="pt-4 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle"><span>Safe 301 Architecture</span><span class="text-charcoal font-semibold">Guaranteed Uptime</span></div></div><div class="md:col-span-6 bg-white rounded-2xl p-6 sm:p-10 border border-borderline shadow-glass-card flex flex-col justify-between"><div class="w-11 h-11 rounded-xl bg-surface border border-borderline text-charcoal flex items-center justify-center mb-5"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><h3 class="text-lg font-extrabold text-charcoal mb-2">Technical SEO &amp; International Search Domination</h3><p class="text-subtle text-sm leading-relaxed mb-5">Engineered for US &amp; UK target markets. Deep schema markup, Core Web Vitals optimization, and local search authority to capture high-intent commercial leads.</p><div class="flex flex-wrap gap-2 mb-5"><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">US &amp; UK Local Search</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Schema &amp; Rich Snippets</span><span class="px-2.5 py-1 rounded-md bg-surface text-charcoal text-[11px] font-medium">Core Web Vitals 99+</span></div><div class="pt-4 border-t border-borderline flex items-center justify-between text-xs font-medium text-subtle"><span>High Commercial Intent</span><span class="text-charcoal font-semibold">Organic Dominance</span></div></div></div></div></section>
+<!-- ============================================================ -->
+<!-- PORTFOLIO SECTION                                            -->
+<!-- ============================================================ -->
+<section class="py-16 sm:py-32 bg-surface/60 border-t border-borderline" id="portfolio"><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="flex flex-col mb-10 gap-3"><div><div class="inline-flex items-center gap-2 text-xs font-bold font-heading uppercase tracking-widest text-cobalt mb-2"><span>Verified Deployments</span></div><h2 class="text-2xl sm:text-5xl font-extrabold text-charcoal leading-tight">Good Work Speaks for Itself.</h2><p class="text-subtle text-sm mt-1.5">Explore some of the websites we've designed and developed.</p></div><div class="inline-flex items-center gap-2 text-[11px] font-mono text-subtle bg-white px-3 py-1.5 rounded-full border border-borderline shadow-sm w-fit"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span>4 Live Production Builds Featured</span></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><article class="bg-white rounded-2xl border border-borderline overflow-hidden shadow-glass-card flex flex-col"><div class="px-4 py-2.5 bg-surface border-b border-borderline flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span></div><div class="text-[10px] font-mono text-subtle truncate max-w-[170px]">zedesign.netlify.app</div><span class="text-[9px] uppercase font-bold text-cobalt bg-cobalt-light px-1.5 py-0.5 rounded">UK Studio</span></div><div class="relative h-56 bg-slate-100 overflow-hidden"><img alt="ZEDesign Interiors Website Preview" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH7nhiS28SlOwQl27SjW9voS_DbsJUZC-AmCBViq4Hj_7wu5T9YwdcSubhbAVMn77Xl1aIsK_263if5cvdnvsVJKg3t4fgiIpQ5O4MR_uvMW4YBbrV2uVhbA560giFDQS-k93zhi6RmgvW67zfNwMNxh0xTXNAhsJwl4ErSX35-s4N3flUlpTWAFLvoUTo3nLNCVrXvC6ui2xYQP1U3BppDT0NqobQ8uVcSGymtkoJ"></div><div class="p-5 bg-white border-t border-borderline flex flex-col gap-3.5"><div><span class="text-[11px] font-semibold text-cobalt uppercase tracking-wider">Architecture &amp; Hospitality</span><h3 class="text-lg font-extrabold text-charcoal mt-0.5">ZEDesign Interiors</h3></div><a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors" href="https://zedesign.netlify.app" rel="noopener noreferrer" target="_blank"><span>View Live Website</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></article><article class="bg-white rounded-2xl border border-borderline overflow-hidden shadow-glass-card flex flex-col"><div class="px-4 py-2.5 bg-surface border-b border-borderline flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span></div><div class="text-[10px] font-mono text-subtle truncate max-w-[170px]">modelbridgeusa.netlify.app</div><span class="text-[9px] uppercase font-bold text-cobalt bg-cobalt-light px-1.5 py-0.5 rounded">US Academy</span></div><div class="relative h-56 bg-slate-100 overflow-hidden"><img alt="Model Bridge USA Website Preview" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTDdsSd0HFKkIJ0RzOZmmFUNxTtFhtDPcWQvKNOjSf7UrMWXhLko-jdevm0FK6rlefQWHixW81hktBBOYmF-tifhr-jLKrDaS7OQcb_s2rJTKrtlkNOOJAOTqYnZ8Gz_SAo7Ff7nL7NJFJ2NygUUyPpt_rN0pK5g21aL8nx3p876nVDENXK55Zk8nX6vsv2Wc1mB3z-xNNl80iJqgcwxfm6OU1ARMoIydgTZaEkQN1"></div><div class="p-5 bg-white border-t border-borderline flex flex-col gap-3.5"><div><span class="text-[11px] font-semibold text-cobalt uppercase tracking-wider">Modeling Academy &amp; Editorial</span><h3 class="text-lg font-extrabold text-charcoal mt-0.5">Model Bridge USA</h3></div><a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors" href="https://modelbridgeusa.netlify.app" rel="noopener noreferrer" target="_blank"><span>View Live Website</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></article><article class="bg-white rounded-2xl border border-borderline overflow-hidden shadow-glass-card flex flex-col"><div class="px-4 py-2.5 bg-surface border-b border-borderline flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span></div><div class="text-[10px] font-mono text-subtle truncate max-w-[170px]">timyinsicily.netlify.app</div><span class="text-[9px] uppercase font-bold text-cobalt bg-cobalt-light px-1.5 py-0.5 rounded">Culinary</span></div><div class="relative h-56 bg-slate-100 overflow-hidden"><img alt="Timy in Sicily Culinary Experience Preview" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFCFtqHBYjimPTSxwvFqZ6vVvhOUc0X1f4hGxAfCM4yua5Us6-92SPjnqGiws7SHavvw3Q1v1rkfRkbYJm_EZtj004HC3sb0X8MAGOTfUchJIXH_uvHI9t9L968yY4Sa91L8Ba5hAAov3P7Z1uTGIcE_2KN9ygS39KPLPdgnp8dRKMm4zVAPQff-BYZsFwQUH0azn0AnsDpWnscVaixuz95u4om0K9JfzmOgTMz9-M"></div><div class="p-5 bg-white border-t border-borderline flex flex-col gap-3.5"><div><span class="text-[11px] font-semibold text-cobalt uppercase tracking-wider">Luxury Travel &amp; Hospitality</span><h3 class="text-lg font-extrabold text-charcoal mt-0.5">Timy in Sicily</h3></div><a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors" href="https://timyinsicily.netlify.app" rel="noopener noreferrer" target="_blank"><span>View Live Website</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></article><article class="bg-white rounded-2xl border border-borderline overflow-hidden shadow-glass-card flex flex-col"><div class="px-4 py-2.5 bg-surface border-b border-borderline flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span><span class="w-2 h-2 rounded-full bg-gray-300"></span></div><div class="text-[10px] font-mono text-subtle truncate max-w-[170px]">onsite-electronics.netlify.app</div><span class="text-[9px] uppercase font-bold text-cobalt bg-cobalt-light px-1.5 py-0.5 rounded">US IT</span></div><div class="relative h-56 bg-slate-100 overflow-hidden"><img alt="On-Site Electronics IT Support Preview" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQXSbYYkuO3IyaWDmiDMiyVCktLgMqBzKFiVUtPg7aWvravhinzLmUbf3oCPZKskBsiVAjCev8uh8ZI3deNJLTjDQJsqqwxjyuuWAxJDHepIaOddsEO79k7GHOWcwm-qM8LD__ZhfGjoblBKamtbLG7-S17F8SCagsxQ6No5UQOO63f1_8OhSiMbdzYum1RxlPNaPTJHNodTEIH7WSUBPDuLEaobdLohl8L4R1Ztn"></div><div class="p-5 bg-white border-t border-borderline flex flex-col gap-3.5"><div><span class="text-[11px] font-semibold text-cobalt uppercase tracking-wider">Enterprise Tech &amp; Systems</span><h3 class="text-lg font-extrabold text-charcoal mt-0.5">On-Site Electronics</h3></div><a class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-surface hover:bg-charcoal hover:text-white text-charcoal font-semibold text-xs tracking-tight transition-colors" href="https://onsite-electronics.netlify.app" rel="noopener noreferrer" target="_blank"><span>View Live Website</span><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a></div></article></div></div></section>
+<!-- ============================================================ -->
+<!-- HOW IT WORKS TIMELINE                                        -->
+<!-- ============================================================ -->
+<section class="py-12 sm:py-28 relative"><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="relative rounded-3xl bg-charcoal text-white p-7 sm:p-16 overflow-hidden shadow-2xl"><div class="absolute -top-32 -left-32 w-80 h-80 bg-cobalt/40 rounded-full blur-[90px] pointer-events-none"></div><div class="relative z-10 max-w-3xl mx-auto text-center"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-lavender text-xs font-mono mb-4 backdrop-blur-md"><span>Ready in 15 Minutes</span><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span></div><h2 class="text-2xl sm:text-6xl font-extrabold tracking-tight mb-3 leading-tight">Your Next Website Starts Here.</h2><p class="text-sm text-gray-300 leading-relaxed mb-6 max-w-xl mx-auto">Tell us about your business. Let's create something exceptional together.</p><div class="flex flex-col gap-3"><button class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-sm shadow-glow-cobalt active:scale-95 transition-all" onclick="openModal()"><span>Get My Free Website Preview</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><a class="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm backdrop-blur-md active:scale-95 transition-all" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path></svg><span>Chat on WhatsApp</span></a></div><div class="mt-6 text-[11px] text-gray-400 font-mono">Direct Line / WhatsApp: +91 8910964232 • US &amp; UK Timezones</div></div></div></div></section>
+<!-- ============================================================ -->
+<!-- FINAL CTA SECTION                                            -->
+<!-- ============================================================ -->
+<section class="py-20 sm:py-28 relative">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<div class="relative rounded-3xl md:rounded-[40px] bg-charcoal text-white p-10 sm:p-16 md:p-20 overflow-hidden shadow-2xl">
+<!-- Abstract Interactive Aura Background with Subtle Gradients -->
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-cobalt/40 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-500/30 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto text-center">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-lavender text-xs font-mono mb-6 backdrop-blur-md">
+<span>Ready in 15 Minutes</span>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+</div>
+<h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+            Your Next Website Starts Here.
+          </h2>
+<p class="text-base sm:text-xl text-gray-300 leading-relaxed mb-10 max-w-xl mx-auto">
+            Tell us about your business. Let's create something exceptional together.
+          </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-base shadow-glow-cobalt transition-all duration-200 hover:scale-105 active:scale-95" onclick="openModal()">
+<span>Get My Free Website Preview</span>
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-base backdrop-blur-md transition-all duration-200 hover:scale-105" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank">
+<svg class="w-5 h-5 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24">
+<path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path>
+</svg>
+<span>Chat on WhatsApp</span>
+</a>
+</div>
+<!-- Contact line -->
+<div class="mt-8 text-xs text-gray-400 font-mono">
+            Direct Line / WhatsApp: +91 8910964232 • Available for US &amp; UK Timezones
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ -->
+<!-- FOOTER                                                       -->
+<!-- ============================================================ -->
+<footer class="py-12 pb-24 border-t border-borderline bg-white"><div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-8"><div class="md:col-span-5"><a aria-label="Webtron Solution Home" class="flex items-center gap-2.5 mb-3" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv6zmMUhqO_sgLiYTAV0T-52AGyrwD_0FRvZaq7V-IC_ufx0KNi2SuHQiKijHe4G6WG-YKzC5cx9e-vIBpLYnLwL5Wu9ElXUIpkAyuFj4gdTvZlvD2taNJ0B_MONAiDDoH9a0Rd_U9WPx3sm1_HPAJChSZWZwCaldqlkTCWlJyn0CAA5y7MQmVt4JMlXo8Iyp5cvu_51V0K3nmty0eB2tm6UZvW8MObKaTQOym1RLKdsHVa8cTFz8GBw" alt="Webtron Solution Logo" class="w-9 h-9 rounded-lg object-contain bg-white"><span class="font-heading font-extrabold text-base tracking-tight text-charcoal">Webtron <span class="text-cobalt">Solution</span></span></a><p class="text-subtle text-xs leading-relaxed max-w-sm">High-end digital agency designing and engineering world-class web experiences, bespoke e-commerce platforms, and conversion architecture for fast-growing US and UK brands.</p></div><div class="grid grid-cols-2 gap-6 md:col-span-5"><div><h4 class="font-heading font-bold text-xs text-charcoal uppercase tracking-wider mb-3">Services</h4><ul class="space-y-2 text-xs text-subtle"><li><a class="hover:text-cobalt transition-colors" href="#services">Custom Website Development</a></li><li><a class="hover:text-cobalt transition-colors" href="#services">E-commerce Stores</a></li><li><a class="hover:text-cobalt transition-colors" href="#services">Website Redesign</a></li><li><a class="hover:text-cobalt transition-colors" href="#services">Technical SEO &amp; Growth</a></li></ul></div><div><h4 class="font-heading font-bold text-xs text-charcoal uppercase tracking-wider mb-3">Portfolio</h4><ul class="space-y-2 text-xs text-subtle"><li><a class="hover:text-cobalt transition-colors" href="https://zedesign.netlify.app" target="_blank">ZEDesign</a></li><li><a class="hover:text-cobalt transition-colors" href="https://modelbridgeusa.netlify.app" target="_blank">Model Bridge USA</a></li><li><a class="hover:text-cobalt transition-colors" href="https://timyinsicily.netlify.app" target="_blank">Timy in Sicily</a></li><li><a class="hover:text-cobalt transition-colors" href="https://onsite-electronics.netlify.app" target="_blank">On-Site Electronics</a></li></ul></div></div><div class="md:col-span-2 pt-2 border-t border-borderline md:border-t-0"><h4 class="font-heading font-bold text-xs text-charcoal uppercase tracking-wider mb-2">Connect</h4><div class="space-y-2"><a class="inline-flex items-center gap-2 text-xs font-medium text-charcoal hover:text-[#25D366] transition-colors" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank"><span class="w-2 h-2 rounded-full bg-[#25D366]"></span><span>+91 8910964232</span></a><p class="text-[11px] text-subtle">WhatsApp Direct Support (US &amp; UK Hours)</p></div></div></div><div class="pt-6 border-t border-borderline flex flex-col items-center justify-between text-xs text-subtle gap-3 text-center"><div>© <span id="currentYear">2026</span> Webtron Solution. All rights reserved.</div><div class="flex flex-wrap items-center justify-center gap-4 text-[11px]"><button class="hover:text-charcoal transition-colors" onclick="openModal()">Free Preview Intake</button><a class="hover:text-charcoal transition-colors" href="https://wa.me/918910964232">WhatsApp Concierge</a><span>Serving USA &amp; United Kingdom</span></div></div></div></footer><div class="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-borderline px-4 py-2.5 flex items-center justify-between gap-3 shadow-lg md:hidden"><button class="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-cobalt text-white font-semibold text-xs tracking-tight shadow-glow-cobalt active:scale-95 transition-all" onclick="openModal()"><span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span><span>Free Preview in 15m</span></button><a aria-label="Chat on WhatsApp" class="flex-shrink-0 inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#25D366] text-white shadow-md active:scale-95 transition-all" href="https://wa.me/918910964232" rel="noopener noreferrer" target="_blank"><svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.81-.37-4.04-1.08l-.29-.17-3.11.82.83-3.03-.19-.3a8.19 8.19 0 0 1-1.26-4.48c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31z"></path></svg></a></div>
+<!-- ============================================================ -->
+<!-- MODAL: FREE WEBSITE PREVIEW INTAKE FORM                       -->
+<!-- ============================================================ -->
+<div class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-6 bg-charcoal/60 glass-modal opacity-0 pointer-events-none transition-opacity duration-300" id="previewModal"><div class="relative w-full max-w-2xl bg-white rounded-t-3xl sm:rounded-3xl p-5 sm:p-10 shadow-2xl border border-borderline max-h-[92vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="modalCard"><button aria-label="Close modal" class="absolute top-4 right-4 p-2 rounded-full hover:bg-surface text-subtle hover:text-charcoal transition-colors" onclick="closeModal()"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button><div class="mb-5"><div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-cobalt-light text-cobalt text-[10px] font-mono font-semibold uppercase tracking-wider mb-2">15-Minute Turnaround Guarantee</div><h3 class="text-xl sm:text-3xl font-extrabold text-charcoal">Get Your Free Working Website Preview</h3><p class="text-xs text-subtle mt-1">Tell us about your business. We will engineer a custom, interactive preview and send your private staging link directly via WhatsApp or email.</p></div><form class="space-y-3.5" id="previewForm" onsubmit="handleFormSubmit(event)"><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="fullName">Full Name <span class="text-cobalt">*</span></label><input class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="fullName" placeholder="Alex Turner" required="" type="text"></div><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="businessName">Business Name <span class="text-cobalt">*</span></label><input class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="businessName" placeholder="Apex Global Advisory" required="" type="text"></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="businessEmail">Business Email <span class="text-cobalt">*</span></label><input class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="businessEmail" placeholder="alex@apexadvisory.com" required="" type="email"></div><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="whatsappNumber">WhatsApp Number <span class="text-cobalt">*</span></label><input class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="whatsappNumber" placeholder="+1 555 019 2834 or +44 ..." required="" type="tel"></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="countrySelect">Country <span class="text-cobalt">*</span></label><select class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="countrySelect" required=""><option value="United States">United States</option><option value="United Kingdom">United Kingdom</option><option value="Other">Other International</option></select></div><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="websiteType">Type of Website <span class="text-cobalt">*</span></label><select class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="websiteType" required=""><option value="Bespoke Company Website">Custom Website Development</option><option value="E-commerce Store">E-commerce Online Store</option><option value="Website Redesign">Complete Website Redesign</option><option value="High-Impact Landing Page">High-Impact Landing Page</option><option value="SEO Architecture">SEO Architecture &amp; Overhaul</option></select></div></div><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="existingWebsite">Existing Website (Optional)</label><input class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors" id="existingWebsite" placeholder="https://example.com" type="url"></div><div><label class="block text-[11px] font-semibold text-charcoal uppercase tracking-wider mb-1" for="businessDesc">Brief Business Description <span class="text-cobalt">*</span></label><textarea class="w-full px-3.5 py-2.5 rounded-xl border border-borderline bg-surface/50 text-charcoal text-xs focus:outline-none focus:border-cobalt focus:bg-white transition-colors resize-none" id="businessDesc" placeholder="What does your company do and what is your goal?" required="" rows="2"></textarea></div><div class="flex items-center gap-1.5 text-[11px] text-subtle"><svg class="w-3.5 h-3.5 text-cobalt flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg><span>100% Free • Staging preview with zero commitment</span></div><div class="pt-2"><button class="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-cobalt hover:bg-cobalt-dark text-white font-semibold text-sm shadow-glow-cobalt active:scale-[0.98] transition-all" type="submit"><span>Generate My 15-Minute Preview</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></button></div></form><div class="hidden text-center py-6" id="formSuccessState"><div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-3"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><h4 class="text-xl font-extrabold text-charcoal mb-1">Request Received!</h4><p class="text-xs text-subtle max-w-md mx-auto mb-4">Our engineering team is setting up your live staging preview. You will receive your private interactive link on WhatsApp within 15 minutes.</p><button class="px-5 py-2 rounded-full bg-charcoal text-white text-xs font-medium hover:bg-black transition-colors" onclick="closeModal()">Return to Webtron Solution</button></div></div></div>
+<!-- Interactive JavaScript logic for Modal & Micro-Interactions -->
+<script>
+    // Modal Open / Close Logic
+    const modal = document.getElementById('previewModal');
+    const modalCard = document.getElementById('modalCard');
+    const form = document.getElementById('previewForm');
+    const successState = document.getElementById('formSuccessState');
+
+    function openModal() {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-100');
+      modalCard.classList.add('scale-95');
+      document.body.style.overflow = '';
+      
+      // Reset form after close animation
+      setTimeout(() => {
+        form.classList.remove('hidden');
+        successState.classList.add('hidden');
+      }, 300);
+    }
+
+    // Close on backdrop click
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('pointer-events-none')) {
+        closeModal();
+      }
+    });
+
+    // Handle Form Submission experience
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      // Simulate quick transmission
+      form.classList.add('hidden');
+      successState.classList.remove('hidden');
+    }
+
+    // Set dynamic current year in footer
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+
+
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span>
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span>
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span></body></html>
