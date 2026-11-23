@@ -9,8 +9,8 @@ const __dirname = path.dirname(__filename);
 const PORT = Number(process.env.PORT || 3000);
 const DEFAULT_WHATSAPP_RECIPIENT = '918910964232';
 const ADMIN_EMAIL = (process.env.ADMIN_EMAIL || 'jaasvi.marketing@gmail.com').trim().toLowerCase();
-const LEADS_FILE_PATH = path.resolve(__dirname, 'data', 'leads.json');
-const CONVERSIONS_FILE_PATH = path.resolve(__dirname, 'data', 'conversions.json');
+const LEADS_FILE_PATH = path.resolve(__dirname, '.local-data', 'leads.json');
+const CONVERSIONS_FILE_PATH = path.resolve(__dirname, '.local-data', 'conversions.json');
 
 interface LeadPayload {
   fullName: string;

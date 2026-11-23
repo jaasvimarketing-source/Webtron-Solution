@@ -668,14 +668,14 @@ export function GoogleFormsWorkspaceModal({
                     </p>
                     <p className="mt-1">
                       {whatsappConfigured
-                        ? 'Every new submission from the built-in form is saved in data/leads.json and automatically pushed to your WhatsApp.'
-                        : 'Submissions from the built-in form are currently saved in data/leads.json on your server (shown below). To automatically push every submission to WhatsApp without the visitor doing anything, add WHATSAPP_WEBHOOK_URL (Make/Zapier/n8n/Pabbly), WHATSAPP_CALLMEBOT_APIKEY, Meta WhatsApp Cloud API, or Twilio secrets in AI Studio Secrets.'}
+                        ? 'Every new submission from the built-in form is saved in .local-data/leads.json and automatically pushed to your WhatsApp.'
+                        : 'Submissions from the built-in form are currently saved in .local-data/leads.json on your server (shown below). To automatically push every submission to WhatsApp without the visitor doing anything, add WHATSAPP_WEBHOOK_URL (Make/Zapier/n8n/Pabbly), WHATSAPP_CALLMEBOT_APIKEY, Meta WhatsApp Cloud API, or Twilio secrets in AI Studio Secrets.'}
                     </p>
                   </div>
 
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="font-display text-sm font-bold text-[#171717]">
-                      Leads Stored in Server (data/leads.json)
+                      Leads Stored in Server (.local-data/leads.json)
                     </h3>
                     <div className="flex items-center gap-2">
                       <button
@@ -710,7 +710,7 @@ export function GoogleFormsWorkspaceModal({
                     </div>
                   ) : serverLeads.length === 0 ? (
                     <div className="rounded-xl border border-slate-200 bg-white p-6 text-center text-xs sm:text-sm text-[#6B7280]">
-                      No leads saved in data/leads.json yet. Submit the built-in preview form on the
+                      No leads saved in .local-data/leads.json yet. Submit the built-in preview form on the
                       landing page and click Refresh.
                     </div>
                   ) : (
